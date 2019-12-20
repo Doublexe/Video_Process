@@ -1,0 +1,10 @@
+Performance:
+  1. Speed: maskrcnn-torch ~= fasterrcnn-torch >> yolov3 >> maskrcnn-tf
+  2. Tracking quality: maskrcnn-tf ~= yolov3 >>  maskrcnn-torch ~= fasterrcnn-torch
+  3. Tracking quality: offline.py >> offline_light.py
+    (online.py is for debugging.)
+
+Environments:
+  torch                         1.2.0
+  torchvision                   0.4.0
+  tensorflow-gpu                1.14.0 (> 1.3.0)

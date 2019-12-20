@@ -1,0 +1,16 @@
+ENCODER:
+  NAME: 'test'
+
+DETECTOR:
+  NAME: "mask-rcnn"
+
+NND:
+  METRIC: "cosine"
+  MAX_COS_DISTANCE: 0.3
+  BUGET: False
+
+NMS_MAX_OVERLAP: 0.8
+
+
+OUTPUT_DIR: "./test"
+DEVICE: "cuda:0"

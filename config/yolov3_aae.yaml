@@ -1,0 +1,22 @@
+SKIP: 0
+
+ENCODER:
+  NAME: 'aae'
+  DEVICE: "cuda:0"
+  BATCH: 32
+
+DETECTOR:
+  NAME: "yolov3"
+  DEVICE: "cuda:0"
+  BATCH: 1
+
+NND:
+  METRIC: "cosine"
+  MAX_COS_DISTANCE: 0.35
+  BUGET: False
+
+NMS_MAX_OVERLAP: 1.
+
+TRACK:
+  MAX_IOU_DISTANCE: 0.2
+  MAX_AGE_TIME: 2.5

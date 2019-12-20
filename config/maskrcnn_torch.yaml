@@ -1,0 +1,20 @@
+ENCODER:
+  NAME: 'test'
+  DEVICE: "cuda:0"
+  BATCH: 64
+
+DETECTOR:
+  NAME: "mask-rcnn-torch"
+  DEVICE: "cuda:0"
+  BATCH: 8
+
+NND:
+  METRIC: "cosine"
+  MAX_COS_DISTANCE: 0.05
+  BUGET: False
+
+NMS_MAX_OVERLAP: 1.
+
+TRACK:
+  MAX_IOU_DISTANCE: 0.7
+  MAX_AGE_TIME: 2.
